@@ -2,7 +2,7 @@
 /* Body */
 body {
 	font-family: 'IBM Plex Sans', sans-serif;
-	background-color: #f2f2f2;
+	background-color: #FFFFFF;
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-bottom: 0px;
@@ -13,7 +13,7 @@ body {
 }
 /* Container */
 .container {
-	width: 90%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	height: 1000px;
@@ -24,6 +24,7 @@ header {
 	width: 100%;
 	height: 5%;
 	background-color: #FFFFFF;
+	
 }
 .logo {
 	color: #353039;
@@ -65,7 +66,7 @@ ul li:hover a {
 .hero_header {
 	color: #23253F;
 	text-align: center;
-	margin-top: 0px;
+	margin-top: 10px;
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: 0px;
@@ -101,15 +102,15 @@ ul li:hover a {
 	color: #23253F;
 }
 .about {
-	padding-left: 0px;
-	padding-right: 0px;
+	padding-left: 25%;
+	padding-right: 25%;
 	padding-top: 0px;
 	padding-bottom: 0px;
 	display: inline-block;
 	background-color: #FFFFFF;
 	margin-top: 0px;
-	margin-left: 25%;
-	margin-right: 25%;
+	margin-left: 0%;
+	margin-right: 0%;
 }
 /* Stats Gallery */
 .stats {
@@ -181,12 +182,15 @@ ul li:hover a {
 footer {
 	background-color: #FFFFFF;
 	padding-bottom: 35px;
+	width: 100%;
 }
 .footer_column {
-	width: 33.333%;
+	width: 30%;
 	text-align: center;
 	padding-top: 30px;
 	float: left;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 footer .footer_column h3 {
 	color: #4C4C4C;
@@ -194,20 +198,28 @@ footer .footer_column h3 {
 footer .footer_column p {
 	color: #3A455F;
 	background-color: #FFFFFF;
+	padding-left: 5px;
+	padding-right: 5px;
+	
+}
+.footer:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .cards {
 	width: 100%;
 	height: auto;
-	max-width: 400px;
-	max-height: 200px;
+	max-width: 300px;
+	max-height: 150px;
 	outline-style: solid;
-	outline-color: #53485A;
-	outline-width: 2px
+	outline-color: #3A455F;
+	outline-width: 0px
 }
 footer .footer_column p {
-	padding-left: 0px;
-	padding-right: 0px;
+	padding-left: 10%;
+	padding-right: 10%;
 	text-align: justify;
 	line-height: 25px;
 	font-weight: lighter;
@@ -346,16 +358,11 @@ nav ul li {
 	margin-top: 20px;
 	line-height: 22px;
 }
-.hero_header {
-	padding-left: 10px;
-	padding-right: 10px;
-	line-height: 22px;
-	text-align: center;
-}
+
 }
 
 /* Small Tablets */
-@media (min-width: 321px)and (max-width: 767px) {
+@media (min-width: 0px)and (max-width: 767px) {
 .logo {
 	width: 100%;
 	text-align: center;
@@ -368,27 +375,47 @@ nav ul li {
 .container header nav {
 	margin-top: 0px;
 	margin-right: 0px;
-	margin-bottom: 0px;
+	margin-bottom: 10px;
 	margin-left: 0px;
 	width: 100%;
 	float: none;
-	overflow: auto;
 	display: inline-block;
 	background: #FFFFFF;
 }
+header {
+	width: 100%;
+	height: 5%;
+	background-color: #FFFFFF;
+	margin-bottom: 150px;
+}
 header nav ul {
-	padding: 0px;
+	padding: 10px;
+	margin-bottom: 10px;
 	float: none;
 }
 nav ul li {
 	margin-top: 0px;
 	margin-right: 0px;
-	margin-bottom: 0px;
+	margin-bottom: 20px;
 	margin-left: 0px;
 	width: 100%;
 	text-align: center;
 	padding-top: 8px;
 	padding-bottom: 8px;
+}
+.hero {
+	background-color: #FFFFFF;
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+.hero_header {
+	color: #23253F;
+	text-align: center;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	letter-spacing: 4px;
 }
 .text_column {
 	width: 100%;
@@ -459,11 +486,20 @@ nav ul li {
 .footer_column {
 	width: 100%;
 }
+.cards {
+	width: 100%;
+	height: auto;
+	max-width: 200px;
+	max-height: 100px;
+	outline-style: solid;
+	outline-color: #3A455F;
+	outline-width: 0px
+}
 }
 
 /* Small Desktops */
 @media (min-width: 768px) and (max-width: 1096px) {
-.text_column {
+	.text_column {
 	width: 100%;
 }
 .thumbnail {
